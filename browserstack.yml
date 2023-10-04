@@ -1,0 +1,60 @@
+userName: YOUR_USERNAME
+accessKey: YOUR_ACCESS_KEY 
+framework: testng
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: 103.0
+  - os: Windows
+    osVersion: 10
+    browserName: Chrome
+    browserVersion: 102.0
+  - os: Windows
+    osVersion: 10
+    browserName: Firefox
+    browserVersion: 102.0
+  - os: Windows
+    osVersion: 11
+    browserName: Firefox
+    browserVersion: 101.0
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Safari
+    browserVersion: 14.1
+  - os: OS X
+    osVersion: Mojave
+    browserName: Safari
+    browserVersion: 12.1
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Edge
+    browserVersion: latest
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Edge
+    browserVersion: 112.0
+  - os: Windows
+    osVersion: 10
+    browserName: IE
+    browserVersion: 11.0
+  - os: Windows
+    osVersion: 8.1
+    browserName: IE
+    browserVersion: 11.0
+browserstackLocal: false
+buildName: JohnAutomateTestng
+buildIdentifier: ${BUILD_NUMBER}
+projectName: JohnAutomateAssignment
+testobservability: true
+networkLogs: true
+consoleLogs: info
+parallelsperplatform: 2
+
+# Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
+# Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
+# Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
+# Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
+testObservability: true
+
+source: testng:sdk-archetype-integrate:v1.0
