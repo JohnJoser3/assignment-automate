@@ -5,7 +5,7 @@ pipeline {
       steps {
         // Checkout the Git repository
         checkout([$class: 'GitSCM', branches: [[name: '*/main']],
-                  userRemoteConfigs: [[url: 'https://github.com/JohnJoser3/automate-jenkins.git']]])
+                  userRemoteConfigs: [[url: 'https://github.com/JohnJoser3/assignment-automate.git']]])
       }
     }
     stage('Compile') {
